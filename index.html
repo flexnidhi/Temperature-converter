@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="main_div"
+      style="
+        width: 50%;
+        border: solid #16404d;
+        height: 500px;
+        border-width: 8px;
+        display: flex;
+        margin: 6rem 23rem;
+      "
+    >
+      <!-- div1 -->
+      <div
+        class="temp-div"
+        style="background-color: #a6cdc6; width: 50%; height: 500px"
+      >
+        <div style="padding: 20px">
+          <h1>Enter Temperature:</h1>
+          <h2 style="padding-top: 2rem">Degree</h2>
+          <input
+          id="temp"
+            style="
+              border: none;
+              width: 70%;
+              height: 31px;
+              border-radius: 6px;
+              background-color: #dff5e0;
+            "
+            type="text"
+            placeholder="0"
+          />
+          <select
+            id="Temp"
+            name=""
+            style="
+              border: none;
+              border-radius: 6px;
+              background-color: #dff5e0;
+              height: 31px;
+            "
+          >
+          <option id="c" value="c">C</option>
+            <option id="F" value="F">F</option>
+            <option id="K" value="K">K</option>
+            
+          </select>
+
+          <h2>Convert in</h2>
+          
+          <select
+            id="Changer"
+            name=""
+            style="
+              border: none;
+              border-radius: 6px;
+              background-color: #dff5e0;
+              height: 38px;
+              width: 70%;
+            "
+          >
+          <option id="celsius" value="celsius">celsius</option>
+            <option id="Fahrenheit" value="Fahrenheit">Fahrenheit</option>
+            <option id="Kelvin" value="Kelvin">Kelvin</option>
+            
+          </select>
+        </div>
+
+        <button
+        id="Convert"
+          style="
+            font-size: 25px;
+            border: none;
+            border-radius: 6px;
+            height: 41px;
+            margin-left: 22px;
+            background-color: #0a7864;
+          "
+        >
+          Convert <img src="./arrow img.png" alt="" style="width: 17px" />
+        </button>
+      </div>
+
+      <!-- div2 -->
+      <div
+        class="temp2-div"
+        style="background-color: #0a7864; width: 50%; height: 500px"
+      >
+      <h1 id="Result" style="    margin: 11rem;
+      font-size: 54px;
+      color: white"></h1>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
